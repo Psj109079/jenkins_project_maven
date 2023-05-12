@@ -52,7 +52,7 @@
 		
 		$.ajax({
 			type: "post",
-			url: "/trans",
+			url: "./trans",
 			data: {"msg": msg, "lang": lang},
 			dataType: "text",
 			success: function(res) {
@@ -75,7 +75,7 @@
 		if(lang == 'en' || lang == 'ja' || lang == 'zh-CN' || lang == 'es') {
 			$.ajax({
 				type: "get",
-				url: "/voice",
+				url: "./voice",
 				data: {"msg": msg, "lang": lang},
 				dataType: "text",
 				success: function(res) { // res = mp3 파일명 반환
